@@ -1,4 +1,5 @@
-const getId = ((id = 0) => () => ++id)();
+let id = 1;
+const getId = () => id++;
 
 // Restrict access to our mock "database" to just this Model file
 const fellows = [
