@@ -12,7 +12,7 @@ const fellows = [
 module.exports.create = (name) => {
   const newFellow = { name, id: getId() };
   fellows.push(newFellow);
-  return newFellow;
+  return { ...newFellow };
 };
 
 module.exports.list = () => {
